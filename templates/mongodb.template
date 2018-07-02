@@ -332,6 +332,12 @@
             },
             "us-west-2": {
                 "AMZNLINUX": "ami-e251209a"
+            },
+            "cn-northwest-1": {
+                "AMZNLINUX": "ami-915d4af3"
+            },
+            "cn-north-1": {
+                "AMZNLINUX": "ami-f8d00995"
             }
         }
     },
@@ -424,7 +430,7 @@
                             "Effect": "Allow",
                             "Principal": {
                                 "Service": [
-                                    "ec2.amazonaws.com"
+                                    "ec2.amazonaws.com.cn"
                                 ]
                             },
                             "Action": [
@@ -497,7 +503,7 @@
             "Properties": {
                 "TemplateURL": {
                     "Fn::Sub": [
-                        "https://${QSS3BucketName}.${QSS3Region}.amazonaws.com/${QSS3KeyPrefix}templates/mongodb-node.template",
+                        "https://s3.cn-northwest-1.amazonaws.com.cn/aws-quickstart/quickstart-mongodb/templates/mongodb-node.template",
                         {
                             "QSS3Region": {
                                 "Fn::If": [
@@ -603,7 +609,7 @@
             "Properties": {
                 "TemplateURL": {
                     "Fn::Sub": [
-                        "https://${QSS3BucketName}.${QSS3Region}.amazonaws.com/${QSS3KeyPrefix}templates/mongodb-node.template",
+                        "https://s3.cn-northwest-1.amazonaws.com.cn/aws-quickstart/quickstart-mongodb/templates/mongodb-node.template",
                         {
                             "QSS3Region": {
                                 "Fn::If": [
@@ -710,7 +716,7 @@
             "Properties": {
                 "TemplateURL": {
                     "Fn::Sub": [
-                        "https://${QSS3BucketName}.${QSS3Region}.amazonaws.com/${QSS3KeyPrefix}templates/mongodb-node.template",
+                        "https://s3.cn-northwest-1.amazonaws.com.cn/aws-quickstart/quickstart-mongodb/templates/mongodb-node.template",
                         {
                             "QSS3Region": {
                                 "Fn::If": [

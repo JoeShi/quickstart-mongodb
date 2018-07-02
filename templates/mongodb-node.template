@@ -350,7 +350,7 @@
                                 {
                                     "Ref": "QSS3KeyPrefix"
                                 },
-                                "scripts/orchestrator.sh orchestrator.sh\n",
+                                "scripts/orchestrator.sh orchestrator.sh --region=cn-northwest-1\n",
                                 "chmod +x orchestrator.sh \n",
                                 "aws s3 cp s3://",
                                 {
@@ -360,7 +360,7 @@
                                 {
                                     "Ref": "QSS3KeyPrefix"
                                 },
-                                "scripts/disable-transparent-hugepages /etc/init.d/disable-transparent-hugepages\n",
+                                "scripts/disable-transparent-hugepages /etc/init.d/disable-transparent-hugepages --region=cn-northwest-1\n",
                                 "chmod +x /etc/init.d/disable-transparent-hugepages \n",
                                 "chkconfig --add disable-transparent-hugepages \n",
                                 "aws s3 cp s3://",
@@ -371,7 +371,7 @@
                                 {
                                     "Ref": "QSS3KeyPrefix"
                                 },
-                                "scripts/init_replica.sh init.sh\n",
+                                "scripts/init_replica.sh init.sh --region=cn-northwest-1\n",
                                 "aws s3 cp s3://",
                                 {
                                     "Ref": "QSS3BucketName"
@@ -380,7 +380,7 @@
                                 {
                                     "Ref": "QSS3KeyPrefix"
                                 },
-                                "scripts/signalFinalStatus.sh signalFinalStatus.sh\n",
+                                "scripts/signalFinalStatus.sh signalFinalStatus.sh --region=cn-northwest-1\n",
                                 "chmod +x signalFinalStatus.sh \n",
                                 "chmod +x init.sh \n",
                                 "#  Run the install \n",
@@ -485,7 +485,7 @@
                         "Fn::Join": [
                             "",
                             [
-                                "arn:aws:automate:",
+                                "arn:aws-cn:automate:",
                                 {
                                     "Ref": "AWS::Region"
                                 },
