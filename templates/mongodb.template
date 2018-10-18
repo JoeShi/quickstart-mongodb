@@ -153,14 +153,14 @@
         },
         "QSS3BucketName": {
             "AllowedPattern": "^[0-9a-zA-Z]+([0-9a-zA-Z-]*[0-9a-zA-Z])*$",
-            "Default": "aws-quickstart",
+            "Default": "chinalabs",
             "Type": "String",
             "ConstraintDescription": "Quick Start bucket name can include numbers, lowercase letters, uppercase letters, and hyphens (-). It cannot start or end with a hyphen (-).",
             "Description": "S3 bucket name for the Quick Start assets. Quick Start bucket name can include numbers, lowercase letters, uppercase letters, and hyphens (-). It cannot start or end with a hyphen (-)."
         },
         "QSS3KeyPrefix": {
             "AllowedPattern": "^[0-9a-zA-Z-/]*$",
-            "Default": "quickstart-mongodb/",
+            "Default": "templates/MongoDB/",
             "Type": "String",
             "ConstraintDescription": "Quick Start key prefix can include numbers, lowercase letters, uppercase letters, hyphens (-), and forward slash (/).",
             "Description": "S3 key prefix for the Quick Start assets. Quick Start key prefix can include numbers, lowercase letters, uppercase letters, hyphens (-), and forward slash (/). It cannot start or end with a hyphen (-)."
@@ -503,7 +503,7 @@
             "Properties": {
                 "TemplateURL": {
                     "Fn::Sub": [
-                        "https://s3.cn-northwest-1.amazonaws.com.cn/aws-quickstart/quickstart-mongodb/templates/mongodb-node.template",
+                        "https://s3.cn-north-1.amazonaws.com.cn/chinalabs/templates/MongoDB/templates/mongodb-node.template",
                         {
                             "QSS3Region": {
                                 "Fn::If": [
@@ -609,7 +609,7 @@
             "Properties": {
                 "TemplateURL": {
                     "Fn::Sub": [
-                        "https://s3.cn-northwest-1.amazonaws.com.cn/aws-quickstart/quickstart-mongodb/templates/mongodb-node.template",
+                        "https://s3.cn-north-1.amazonaws.com.cn/chinalabs/templates/MongoDB/templates/mongodb-node.template",
                         {
                             "QSS3Region": {
                                 "Fn::If": [
@@ -716,7 +716,7 @@
             "Properties": {
                 "TemplateURL": {
                     "Fn::Sub": [
-                        "https://s3.cn-northwest-1.amazonaws.com.cn/aws-quickstart/quickstart-mongodb/templates/mongodb-node.template",
+                        "https://s3.cn-north-1.amazonaws.com.cn/chinalabs/templates/MongoDB/templates/mongodb-node.template",
                         {
                             "QSS3Region": {
                                 "Fn::If": [
