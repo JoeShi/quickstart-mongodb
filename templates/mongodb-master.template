@@ -426,7 +426,7 @@
             "Properties": {
                 "TemplateURL": {
 					"Fn::Sub": [
-						"https://s3.cn-north-1.amazonaws.com.cn/chinalabs/templates/MongoDB/submodules/quickstart-aws-vpc/templates/aws-vpc.template",
+						"https://s3.cn-northwest-1.amazonaws.com.cn/aws-quickstart/quickstart-mongodb/submodules/quickstart-aws-vpc/templates/aws-vpc.template",
 						{
 							"QSS3Region": {
 								"Fn::If": [
@@ -483,7 +483,7 @@
             "Properties": {
                 "TemplateURL": {
                     "Fn::Sub": [
-                        "https://s3.cn-north-1.amazonaws.com.cn/chinalabs/templates/MongoDB/submodules/quickstart-linux-bastion/templates/linux-bastion.template",
+                        "https://s3.cn-northwest-1.amazonaws.com.cn/aws-quickstart/quickstart-mongodb/submodules/quickstart-linux-bastion/templates/linux-bastion.template",
                         {
                             "QSS3Region": {
                                 "Fn::If": [
@@ -545,7 +545,7 @@
             "Properties": {
             	"TemplateURL": {
                     "Fn::Sub": [
-                        "https://s3.cn-north-1.amazonaws.com.cn/chinalabs/templates/MongoDB/mongodb.template",
+                        "https://s3.cn-northwest-1.amazonaws.com.cn/aws-quickstart/quickstart-mongodb/mongodb.template",
                         {
                             "QSS3Region": {
                                 "Fn::If": [

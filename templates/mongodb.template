@@ -503,7 +503,7 @@
             "Properties": {
                 "TemplateURL": {
                     "Fn::Sub": [
-                        "https://s3.cn-north-1.amazonaws.com.cn/chinalabs/templates/MongoDB/templates/mongodb-node.template",
+                        "https://s3.cn-northwest-1.amazonaws.com.cn/aws-quickstart/quickstart-mongodb/templates/mongodb-node.template",
                         {
                             "QSS3Region": {
                                 "Fn::If": [
@@ -609,7 +609,7 @@
             "Properties": {
                 "TemplateURL": {
                     "Fn::Sub": [
-                        "https://s3.cn-north-1.amazonaws.com.cn/chinalabs/templates/MongoDB/templates/mongodb-node.template",
+                        "https://s3.cn-northwest-1.amazonaws.com.cn/aws-quickstart/quickstart-mongodb/templates/mongodb-node.template",
                         {
                             "QSS3Region": {
                                 "Fn::If": [
@@ -716,7 +716,7 @@
             "Properties": {
                 "TemplateURL": {
                     "Fn::Sub": [
-                        "https://s3.cn-north-1.amazonaws.com.cn/chinalabs/templates/MongoDB/templates/mongodb-node.template",
+                        "https://s3.cn-northwest-1.amazonaws.com.cn/aws-quickstart/quickstart-mongodb/templates/mongodb-node.template",
                         {
                             "QSS3Region": {
                                 "Fn::If": [

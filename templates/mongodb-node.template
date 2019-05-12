@@ -170,14 +170,14 @@
         },
         "QSS3BucketName": {
             "AllowedPattern": "^[0-9a-zA-Z]+([0-9a-zA-Z-]*[0-9a-zA-Z])*$",
-            "Default": "chinalabs",
+            "Default": "aws-quickstart",
             "Type": "String",
             "ConstraintDescription": "Quick Start bucket name can include numbers, lowercase letters, uppercase letters, and hyphens (-). It cannot start or end with a hyphen (-).",
             "Description": "S3 bucket name for the Quick Start assets. Quick Start bucket name can include numbers, lowercase letters, uppercase letters, and hyphens (-). It cannot start or end with a hyphen (-)."
         },
         "QSS3KeyPrefix": {
             "AllowedPattern": "^[0-9a-zA-Z-/]*$",
-            "Default": "templates/MongoDB/",
+            "Default": "quickstart-mongodb/",
             "Type": "String",
             "ConstraintDescription": "Quick Start key prefix can include numbers, lowercase letters, uppercase letters, hyphens (-), and forward slash (/).",
             "Description": "S3 key prefix for the Quick Start assets. Quick Start key prefix can include numbers, lowercase letters, uppercase letters, hyphens (-), and forward slash (/). It cannot start or end with a hyphen (-)."
@@ -350,7 +350,7 @@
                                 {
                                     "Ref": "QSS3KeyPrefix"
                                 },
-                                "scripts/orchestrator.sh orchestrator.sh --region=cn-north-1\n",
+                                "scripts/orchestrator.sh orchestrator.sh --region=cn-northwest-1\n",
                                 "chmod +x orchestrator.sh \n",
                                 "aws s3 cp s3://",
                                 {
@@ -360,7 +360,7 @@
                                 {
                                     "Ref": "QSS3KeyPrefix"
                                 },
-                                "scripts/disable-transparent-hugepages /etc/init.d/disable-transparent-hugepages --region=cn-north-1\n",
+                                "scripts/disable-transparent-hugepages /etc/init.d/disable-transparent-hugepages --region=cn-northwest-1\n",
                                 "chmod +x /etc/init.d/disable-transparent-hugepages \n",
                                 "chkconfig --add disable-transparent-hugepages \n",
                                 "aws s3 cp s3://",
@@ -371,7 +371,7 @@
                                 {
                                     "Ref": "QSS3KeyPrefix"
                                 },
-                                "scripts/init_replica.sh init.sh --region=cn-north-1\n",
+                                "scripts/init_replica.sh init.sh --region=cn-northwest-1\n",
                                 "aws s3 cp s3://",
                                 {
                                     "Ref": "QSS3BucketName"
@@ -380,7 +380,7 @@
                                 {
                                     "Ref": "QSS3KeyPrefix"
                                 },
-                                "scripts/signalFinalStatus.sh signalFinalStatus.sh --region=cn-north-1\n",
+                                "scripts/signalFinalStatus.sh signalFinalStatus.sh --region=cn-northwest-1\n",
                                 "chmod +x signalFinalStatus.sh \n",
                                 "chmod +x init.sh \n",
                                 "#  Run the install \n",
